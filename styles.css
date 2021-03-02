@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 30vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 30vw;
+    height: 60vh;
+}
+
+.image-container-before, .image-container-after {
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+}
+
+.image-container-before {
+    width: 15vw;
+    overflow: hidden;
+}
+
+.slider {
+    width: .5rem;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    pointer-events: none;
+}
